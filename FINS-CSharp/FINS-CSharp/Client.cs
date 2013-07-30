@@ -12,7 +12,8 @@ namespace FINS_CSharp
     public class Client
     {
         private UdpClient client;
-
+        private bool shouldEndReceiving = false;
+        private Thread receivingThread;
         public delegate void onReceiveMessage(byte[] message);
         public event onReceiveMessage MessageReceived;
 
@@ -21,7 +22,7 @@ namespace FINS_CSharp
             client = new UdpClient(port);
             IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse(FINS.remoteIp), port);
             client.Connect(endPoint);
-            Thread receivingThread = new Thread(new ThreadStart(MessageReceivingThread));
+            receivingThread = new Thread(new ThreadStart(MessageReceivingThread));
             receivingThread.Start();
         }
 
@@ -36,17 +37,26 @@ namespace FINS_CSharp
 
         private void MessageReceivingThread()
         {
-            while (true)
+            while (!shouldEndReceiving)
             {
                 IPEndPoint remote = new IPEndPoint(IPAddress.Any, 9599);
-                byte[] contents = client.Receive(ref remote);
-
-                if (contents.Length > 0)
+                try
                 {
-                    string messageAsBytes = BitConverter.ToString(contents);
-                    MessageReceived(contents);
+                    byte[] contents = client.Receive(ref remote);
+
+                    if (contents.Length > 0)
+                    {
+                        string messageAsBytes = BitConverter.ToString(contents);
+                        MessageReceived(contents);
+                    }
+                }
+                catch
+                {
+                    MessageReceived(new byte[] { 0 });
                 }
             }
+
+            Console.WriteLine("Ended.");
         }
 
         public FINS Prepare()
@@ -85,6 +95,12 @@ namespace FINS_CSharp
             byte[] result = new byte[i.Length * sizeof(char)];
             Buffer.BlockCopy(i.ToCharArray(), 0, result, 0, result.Length);
             client.Send(result, result.Length);
+        }
+
+        public void Close()
+        {
+            shouldEndReceiving = true;
+            client.Close();
         }
     }
 }

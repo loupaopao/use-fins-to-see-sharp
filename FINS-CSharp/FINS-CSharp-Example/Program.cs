@@ -29,7 +29,9 @@ namespace FINS_CSharp_Example
             // Read from PLC
             client.Prepare().Read(FINS.MemoryType.E).From(0).Limit(200).Finish();
 
-            // We're stuck in a loop, reading forever, but that's fine.
+            // We're stuck in a loop, reading forever, but that's fine - we'll close the client.
+
+            client.Close();
         }
 
         static void Main(string[] args)
