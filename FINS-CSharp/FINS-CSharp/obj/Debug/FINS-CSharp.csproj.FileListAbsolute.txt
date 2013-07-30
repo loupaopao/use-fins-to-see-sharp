@@ -1,0 +1,5 @@
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp\bin\Debug\FINS-CSharp.dll
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp\bin\Debug\FINS-CSharp.pdb
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp\obj\Debug\FINS-CSharp.csprojResolveAssemblyReference.cache
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp\obj\Debug\FINS-CSharp.dll
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp\obj\Debug\FINS-CSharp.pdb

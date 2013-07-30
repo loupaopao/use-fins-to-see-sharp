@@ -1,0 +1,8 @@
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp-Example\bin\Debug\FINS-CSharp-Example.exe.config
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp-Example\bin\Debug\FINS-CSharp-Example.exe
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp-Example\bin\Debug\FINS-CSharp-Example.pdb
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp-Example\bin\Debug\FINS-CSharp.dll
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp-Example\bin\Debug\FINS-CSharp.pdb
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp-Example\obj\Debug\FINS-CSharp-Example.csprojResolveAssemblyReference.cache
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp-Example\obj\Debug\FINS-CSharp-Example.exe
+C:\gavrilovmiroslav\use-fins-to-see-sharp\FINS-CSharp\FINS-CSharp-Example\obj\Debug\FINS-CSharp-Example.pdb

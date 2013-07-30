@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINS-CSharp", "FINS-CSharp\FINS-CSharp.csproj", "{24ACEC15-1868-40E9-9614-A63A949A7B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINS-CSharp-Example", "FINS-CSharp-Example\FINS-CSharp-Example.csproj", "{00D61A53-7F5D-44F1-A4C7-99B899C0CD6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24ACEC15-1868-40E9-9614-A63A949A7B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24ACEC15-1868-40E9-9614-A63A949A7B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24ACEC15-1868-40E9-9614-A63A949A7B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24ACEC15-1868-40E9-9614-A63A949A7B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D61A53-7F5D-44F1-A4C7-99B899C0CD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D61A53-7F5D-44F1-A4C7-99B899C0CD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D61A53-7F5D-44F1-A4C7-99B899C0CD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D61A53-7F5D-44F1-A4C7-99B899C0CD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
